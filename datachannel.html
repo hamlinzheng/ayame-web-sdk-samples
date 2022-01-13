@@ -1,27 +1,27 @@
-<html lang="ja">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Ayame DataChannel Sample</title>
-        <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Chalarangelo/mini.css@v3.0.1/dist/mini-default.min.css">
     </head>
     <body>
       <header class="sticky row">
         <h4>Ayame DataChannel Sample</h4>
       </header>
       <div>
-        <p>ルームID
+        <p>RoomID
         <input id="roomIdInput" type="text" value=""></input>
         </p>
-        <p>クライアントID
+        <p>ClientID
         <input id="clientIdInput" disabled type="text" value=""></input>
         </p>
-        <button onclick="startConn();">接続</button>
-        <button onclick="disconnect();">切断</button>
-        <p> 送信するメッセージ
+        <button onclick="startConn();">Join</button>
+        <button onclick="disconnect();">Quit</button>
+        <p> Message to send: 
         <input id="sendDataInput" type="text" value="🐶"></input>
         </p>
-        <button onclick="sendData();">送信</button>
-        <p> 受信したメッセージ </p>
+        <button onclick="sendData();">Send</button>
+        <p> Received message: </p>
         <textarea style="height:200px;" id="messages" disabled type="text" value=""></textarea>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/@open-ayame/ayame-web-sdk@2020.3.0/dist/ayame.js"></script>

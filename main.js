@@ -1,5 +1,5 @@
-const signalingUrl = 'wss://ayame-labo.shiguredo.jp/signaling';
-let roomId = 'ayame-web-sdk-sample';
+const signalingUrl = 'ws://loopx.com.cn:3000/signaling';
+let roomId = 'webrtc-sample';
 let clientId = null;
 let videoCodec = null;
 let audioCodec = null;

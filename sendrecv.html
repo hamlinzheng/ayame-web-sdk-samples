@@ -1,21 +1,21 @@
-<html lang="ja">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Ayame Send/Recv Sample</title>
-        <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Chalarangelo/mini.css@v3.0.1/dist/mini-default.min.css">
     </head>
     <body>
       <header class="sticky row">
       <h4>Ayame Send/Recv Sample</h4>
       </header>
       <div>
-        <p>ルームID
+        <p>RoomID
         <input id="roomIdInput" type="text"></input>
         </p>
-        <p>クライアントID
+        <p>ClientID
         <input id="clientIdInput" disabled type="text" value=""></input>
         </p>
-        <p> 映像コーデック
+        <p> Video Codec
         <select id="video-codec" onChange="onChangeVideoCodec();">
           <option value="none">none</option>
           <option value="VP8">VP8</option>
@@ -24,10 +24,10 @@
           <option value="H264">H264</option>
           <option value="H265">H265</option>
         </select>
-        （Google Chrome、Microsoft Edge でのみで動作します）
+        （For Google Chrome and Microsoft Edge only）
         </p>
-        <button onclick="startConn();">接続</button>
-        <button onclick="disconnect();">切断</button>
+        <button onclick="startConn();">Join</button>
+        <button onclick="disconnect();">Quit</button>
       </div>
       <div style="float:left;">
         <video id="local-video" muted autoplay playsinline style="width: 400px; height: 300px; border: 1px solid black;"></video>
