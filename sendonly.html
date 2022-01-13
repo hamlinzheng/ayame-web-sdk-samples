@@ -9,6 +9,13 @@
           <h4>Ayame SendOnly Sample</h4>
       </header>
       <div>
+        <p>Server Select
+        <select id="signal-url" onChange="onChangeServer();">
+          <option value="none">none</option>
+          <option value="ws://loopx.com.cn:3000/signaling">Shanghai</option>
+          <option value="ws://ca.loopx.ai:3000/signaling">Waterloo</option>
+        </select>
+        </p>
         <p>RoomID
         <input id="roomIdInput" type="text" value=""></input>
         </p>

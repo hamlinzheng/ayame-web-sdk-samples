@@ -1,4 +1,5 @@
-const signalingUrl = 'ws://loopx.com.cn:3000/signaling';
+// const signalingUrl = 'ws://loopx.com.cn:3000/signaling';
+let signalingUrl = null;
 let roomId = 'webrtc-sample';
 let clientId = null;
 let videoCodec = null;
@@ -9,6 +10,14 @@ function onChangeVideoCodec() {
   videoCodec = document.getElementById("video-codec").value;
   if (videoCodec == 'none') {
     videoCodec = null;
+  }
+}
+
+function onChangeServer() {
+  signalingUrl = document.getElementById("signal-url").value;
+  console.log('onChangeServer: ', signalingUrl)
+  if (signalingUrl == 'none') {
+    signalingUrl = null;
   }
 }
 // query string から roomId, clientId を取得するヘルパー
